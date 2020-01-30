@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .box{
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .green{
+            color: #fff;
+            background-color: green;
+        }
+
+        .blue{
+            color: black;
+            background-color: cornflowerblue;
+        }
+
+        .orange{
+            color: black;
+            background-color: orangered;
+        }
+    </style>
+
+    <p class="green box">I`m Green</p>
+    <p class="blue box">I`M blue</p>
+    <p class="orange box">I`M orange</p>
+    <script>
+
+        function isFullAge5() {
+            var argsArr = Array.prototype.slice.call(arguments)
+
+            argsArr.forEach(function(cur){
+                console.log((2016 - cur) >= 18) 
+            })
+        }
+
+        // isFullAge5(1990, 329, 329)
+        // isFullAge5(1990, 329, 329, 1990, 329, 329)
+
+        function isFullAge6(...year)
+        {
+            year.forEach(cur => console.log((2016 - cur) >= 18))
+        }
+        
+        isFullAge6(1990, 329, 329)
+    </script>
+</body>
+</html>

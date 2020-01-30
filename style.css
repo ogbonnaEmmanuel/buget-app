@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+header{
+    width: inherit;
+    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(dawn-3247379_1920.jpg);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.budget-info{padding-top: 20px;}
+.num-info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.box-width{
+    margin: auto;
+    width: 300px;
+    margin-bottom: 40px;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.row-my:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.income-num{
+    float: right;
+}
+.income-text{
+    float: left;
+    color: black;
+}
+.green-color{background-color: #34ABA9;}
+.red-color{background-color: #EE4B47;}
+.tools{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -53%);
+    margin-top: 30px;
+}
+
+.form-el{
+    float: left;
+    margin-left: 20px;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 15px;
+}
+.color-exp:focus{
+    border: 2px solid #EE4B47; 
+}
+.color-inc:focus{
+    border: 2px solid #34ABA9; 
+}
+.icon-size{
+    font-size: 30px;
+    color: #34ABA9;
+}
+.icon-size:hover{
+    cursor: pointer;
+}
+.small-size{width: 50px;}
+.big-size{width: 300px;}
+.medium-size{
+    width: 100px;
+}
+
+input:focus{outline: none;}
+.divide-my-cell{
+    border-top: 2px solid #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+    padding-top: 4px;
+}
